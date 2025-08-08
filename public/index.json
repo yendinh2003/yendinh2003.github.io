@@ -4,7 +4,7 @@
 	"title": "Session Management",
 	"tags": [],
 	"description": "",
-	"content": "Work with Amazon System Manager - Session Manager Overall In this lab, you\u0026rsquo;ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.\nContent Introduction Preparation Connect to EC2 instance Manage session logs Port Forwarding Clean up resources "
+	"content": "Uploading Images to Amazon S3 Using Amazon Lambda and API Gateway Overview Uploading Images to Amazon S3 Using AWS Lambda and API Gateway is a popular solution for modern web applications to process images serverless. In this model:\nThe user sends an image (Base64 or file format) via API Gateway using the POST method. API Gateway passes the data to AWS Lambda. Lambda processes image data and uploads it directly to Amazon S3 – a powerful object storage service Contents Introduction Preparation steps Lambda Configuration API Gateway Configuration Test API on Postman Cleanup resources "
 },
 {
 	"uri": "/3-configlambda/3.1-configlambda/",

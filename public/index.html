@@ -12,21 +12,21 @@
     <title>Session Management :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1754575513" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1754575513" rel="stylesheet">
-    <link href="/css/hybrid.css?1754575513" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1754575513" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1754575513" rel="stylesheet">
-    <link href="/css/auto-complete.css?1754575513" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1754575513" rel="stylesheet">
-    <link href="/css/theme.css?1754575513" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1754575513" rel="stylesheet">
+    <link href="/css/nucleus.css?1754664291" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754664291" rel="stylesheet">
+    <link href="/css/hybrid.css?1754664291" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754664291" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754664291" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754664291" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754664291" rel="stylesheet">
+    <link href="/css/theme.css?1754664291" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754664291" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1754575513" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1754664291" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1754575513"></script>
+    <script src="/js/jquery-3.3.1.min.js?1754664291"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1754575513"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1754575513"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1754664291"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754664291"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1754575513"></script>
+<script type="text/javascript" src="/js/search.js?1754664291"></script>
 
     
   </div>
@@ -562,19 +562,25 @@
 </span>
 
  
-<h1 id="work-with-amazon-system-manager---session-manager">Work with Amazon System Manager - Session Manager</h1>
-<h3 id="overall">Overall</h3>
-<p>In this lab, you&rsquo;ll learn the basics and practice of Amazon  System Manager - Session Manager
-. Perform creating public and private instance connections.</p>
-<p><img alt="ConnectPrivate" src="/images/arc-log.png"></p>
-<h3 id="content">Content</h3>
+<h1 id="uploading-images-to-amazon-s3-using-amazon-lambda-and-api-gateway">Uploading Images to Amazon S3 Using Amazon Lambda and API Gateway</h1>
+<h3 id="overview">Overview</h3>
+<ul>
+<li>Uploading Images to Amazon S3 Using AWS Lambda and API Gateway is a popular solution for modern web applications to process images serverless.</li>
+</ul>
+<p>In this model:</p>
+<ul>
+<li>The user sends an image (Base64 or file format) via API Gateway using the POST method.</li>
+<li>API Gateway passes the data to AWS Lambda.</li>
+<li>Lambda processes image data and uploads it directly to Amazon S3 – a powerful object storage service</li>
+</ul>
+<h3 id="contents">Contents</h3>
 <ol>
-<li><a href="/1-introduce/">Introduction </a></li>
-<li><a href="/2-prerequiste/">Preparation</a></li>
-<li><a href="3-accessibilitytoinstances/">Connect to EC2 instance</a></li>
-<li><a href="4-s3log/">Manage session logs</a></li>
-<li><a href="5-Portfwd/">Port Forwarding</a></li>
-<li><a href="/6-cleanup/">Clean up resources</a></li>
+<li><a href="/1-introduce/">Introduction</a></li>
+<li><a href="/2-prerequiste/">Preparation steps</a></li>
+<li><a href="/3-configlambda/">Lambda Configuration</a></li>
+<li><a href="/4-apitolambda/">API Gateway Configuration</a></li>
+<li><a href="/5-testapi/">Test API on Postman</a></li>
+<li><a href="/6-cleanup/">Cleanup resources</a></li>
 </ol>
 	
   
@@ -825,19 +831,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1754575513"></script>
-    <script src="/js/perfect-scrollbar.min.js?1754575513"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1754575513"></script>
-    <script src="/js/jquery.sticky.js?1754575513"></script>
-    <script src="/js/featherlight.min.js?1754575513"></script>
-    <script src="/js/highlight.pack.js?1754575513"></script>
+    <script src="/js/clipboard.min.js?1754664291"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754664291"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754664291"></script>
+    <script src="/js/jquery.sticky.js?1754664291"></script>
+    <script src="/js/featherlight.min.js?1754664291"></script>
+    <script src="/js/highlight.pack.js?1754664291"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1754575513"></script>
-    <script src="/js/learn.js?1754575513"></script>
-    <script src="/js/hugo-learn.js?1754575513"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754664291"></script>
+    <script src="/js/learn.js?1754664291"></script>
+    <script src="/js/hugo-learn.js?1754664291"></script>
 
-    <link href="/mermaid/mermaid.css?1754575513" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1754575513"></script>
+    <link href="/mermaid/mermaid.css?1754664291" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1754664291"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
